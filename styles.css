@@ -8,6 +8,7 @@ body {
     color: #333;
 }
 
+
 h1, h2, p {
     margin: 0;
     padding: 0;
@@ -31,7 +32,7 @@ p {
 
 /* Cabeçalho com Imagem de Fundo */
 .hero {
-    background-image: url('backgroung.png'); /* Substituir com tua imagem */
+    background-image: url('background.png'); /* Substituir com tua imagem */
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -339,7 +340,7 @@ footer {
 }
 
 .contact form button:hover {
-    background-color: #00509e;
+    background-color: black;
 }
 
 /* Informações de Contato */
@@ -370,3 +371,54 @@ footer {
 
 
 
+.contact-info-container a {
+    text-decoration: none; /* Remove o sublinhado padrão */
+    color: #007bff; /* Cor do link */
+    transition: text-decoration 0.3s ease-in-out; /* Transição suave */
+}
+
+.contact-info-container a:hover,
+.contact-info-container a:focus {
+    text-decoration: underline; /* Adiciona sublinhado quando hover ou foco */
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif; /* Fonte moderna */
+    background-color: #f4f4f4; /* Fundo suave */
+    margin: 0;
+    padding: 0;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 20px auto; /* Centraliza a seção */
+    padding: 20px;
+    background-color: #fff; /* Fundo branco para contraste */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+    font-size: 1.8em; /* Tamanho do título */
+    color: #333; /* Cor do título */
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: #f9f9f9; /* Fundo do cartão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 15px;
+    margin-bottom: 20px; /* Espaço entre cartões */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Sombra do cartão */
+}
+
+.card p {
+    margin: 0; /* Remove margem padrão */
+    color: #555; /* Cor do texto */
+}
+
+.card strong {
+    font-weight: bold; /* Negrito para o nome do curso */
+}
