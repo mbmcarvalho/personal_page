@@ -1,0 +1,250 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00509e;
+}
+
+p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Cabeçalho com Imagem de Fundo */
+.hero {
+    background-image: url('backgroung.png'); /* Substituir com tua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.perfil-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+
+/* Ícones de Redes Sociais */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* Barra de Navegação */
+.navbar {
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: #007BFF;
+}
+/* Estilo para o link ativo na barra de navegação */
+.navbar ul li a.active {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: underline; /* Destaque adicional */
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about, .experience, .education, .projects, .contact {
+    background-color: white;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário de Contato */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00509e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+.about, .experience, .education, .projects, .contact {
+    background-color: white;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333; /* Aplica cor cinza-escuro a todo o texto nas seções */
+}
+
+/* Se necessário, aplique a cor também nos elementos h2, p e links dentro dessas seções */
+.about h2, .experience h2, .education h2, .projects h2, .contact h2,
+.about p, .experience p, .education p, .projects p, .contact p,
+.about a, .experience a, .education a, .projects a, .contact a {
+    color: #333 !important; /* Forçar a cor cinza-escuro, sobrescrevendo qualquer regra anterior */
+}
+
+.justify {
+    text-align: justify;
+}
+
+.projects {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background: #ffffff; /* Cor de fundo original */
+    border: 1px solid #ddd; /* Borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    flex: 1 1 calc(30% - 20px); /* Largura responsiva */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Adicionando cores de fundo */
+.project-card:nth-child(odd) {
+    background-color: #e6f7ff; /* Azul claro para projetos ímpares */
+}
+
+.project-card:nth-child(even) {
+    background-color: #ffe6e6; /* Vermelho claro para projetos pares */
+}
+
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    margin: 0 0 10px;
+}
+
+.project-card p {
+    margin: 0 0 15px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #007bff;
+}
+
