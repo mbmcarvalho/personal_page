@@ -55,15 +55,14 @@
             <div class="project-card">
                 <h3>The northerly winds in Aveiro: analysis of its behaviour in contemporary climate and future climate scenarios</h3>
                 <p class="justify">The study involved the analysis of northerly winds in the Aveiro region, using historical data (1995-2014) and climate projections from the CMIP6 project for future scenarios (SSP2-4.5, SSP3-7.0 and SSP5-8.5). The focus of the project was to investigate how wind behaviour might change under different climatic conditions.</p>
-                <!--  <a href="link-do-projeto" target="_blank">Ver Projeto</a>
-                  -->
             </div>
         </div>
     </section>
     
     <section id="contact" class="contact hidden">
         <h2>Contact</h2>
-        <form action="mailto:teuemail@exemplo.com" method="post" enctype="text/plain">
+        <!-- Formulário integrado com Formspree -->
+        <form action="https://formspree.io/f/mwpkeklr" method="POST">
             <input type="text" name="nome" placeholder="Name" required>
             <input type="email" name="email" placeholder="Email" required>
             <textarea name="mensagem" placeholder="Message" required></textarea>
@@ -72,7 +71,7 @@
     </section>
 
     <footer>
-        <p>&copy; Pão e vinho faz a mulher sã. Beatriz Carvalho 2024.</p>
+        <p>&copy; Pão e vinho fazem a mulher sã. Beatriz Carvalho 2024.</p>
     </footer>
 
     <script>
@@ -109,7 +108,7 @@
     <style>
         /* Estilo para ocultar seções */
         .hidden {
-            display: none; /* Oculta as seções com a classe 'hidden' */
+            display: none;
         }
 
         /* Estilos Gerais */
@@ -145,7 +144,7 @@
 
         /* Cabeçalho com Imagem de Fundo */
         .hero {
-            background-image: url('backgroung.png'); /* Substituir com tua imagem */
+            background-image: url('background.png');
             background-size: cover;
             background-position: center;
             height: 80vh;
@@ -226,7 +225,7 @@
         .navbar ul li a.active {
             color: #007BFF;
             font-weight: bold;
-            text-decoration: underline; /* Destaque adicional */
+            text-decoration: underline;
         }
 
         .navbar ul li a:hover {
@@ -266,11 +265,11 @@
         form button {
             background-color: #007BFF;
             color: white;
-            border: none;
             padding: 10px;
+            border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1rem;
+            transition: background-color 0.3s ease-in-out;
         }
 
         form button:hover {
