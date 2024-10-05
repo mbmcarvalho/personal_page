@@ -6,205 +6,13 @@
     <title>Beatriz Carvalho</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <style>
-        /* Estilo para ocultar seções */
-        .hidden {
-            display: none;
-        }
-
-        /* Estilos Gerais */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-
-        h1, h2, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            color: white;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #00509e;
-        }
-
-        p {
-            color: white;
-            font-size: 1.2rem;
-        }
-
-        /* Cabeçalho com Imagem de Fundo */
-        .hero {
-            background-image: url('background.png'); /* Substituir com tua imagem */
-            background-size: cover;
-            background-position: center;
-            height: 80vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 30px;
-            border-radius: 10px;
-            display: inline-block;
-            text-align: center;
-        }
-
-        .perfil-img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            border: 4px solid white;
-            margin-bottom: 20px;
-        }
-
-        /* Ícones de Redes Sociais */
-        .social-icons {
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            margin: 0 10px;
-            display: inline-block;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .social-icons img {
-            width: 40px;
-            height: 40px;
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.1);
-        }
-
-        /* Barra de Navegação */
-        .navbar {
-            background-color: white;
-            text-align: center;
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .navbar ul li {
-            display: inline-block;
-            margin: 0 15px;
-        }
-
-        .navbar ul li a {
-            text-decoration: none;
-            font-size: 1.1rem;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s ease-in-out;
-        }
-
-        .navbar ul li a:hover {
-            color: #007BFF;
-        }
-
-        /* Seções */
-        section {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .about-education {
-            padding: 40px 20px;
-            background-color: white;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            color: #333;
-        }
-
-        /* Rodapé */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        /* Formulário de Contato */
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        form input, form textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        form button {
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-            margin-left: 20px;
-        }
-
-        form button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Alinhamento de Texto */
-        .justify {
-            text-align: justify;
-        }
-
-        /* Cartão de Projeto */
-        .project-card {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            color: #333;
-        }
-    </style>
 </head>
 <body>
-    <!-- Cabeçalho com Imagem de Fundo -->
     <header class="hero">
         <div class="overlay">
             <img src="image.png" alt="Foto de Perfil" class="perfil-img">
             <h1><a>Beatriz Carvalho</a></h1>
-            <p>BSc in Meteorology, Oceanography and Climate</p>
+            <w>BSc in Meteorology, Oceanography and Climate</w>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/beatriz-carvalho-9aa4a91a7/" target="_blank">
                     <img src="linkedin_logo.png" alt="LinkedIn">
@@ -215,47 +23,84 @@
                 <a href="#contact" class="contact-link" onclick="showSection(event)">
                     <img src="gmail.png" alt="Contact">
                 </a>
-            </div>             
+            </div>
         </div>
     </header>
 
-    <!-- Barra de Navegação -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#intro" class="nav-link">Home</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- Conteúdo da primeira página: About + Education -->
-    <section id="intro" class="about-education">
+<!-- Barra de Navegação -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#intro" class="nav-link">
+            <img src="home-icon.png" alt="Home" class="nav-icon">
+        </a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </div>
+</nav>
+
+
+
+    <!-- Seção 'Sobre Mim' e 'Educação' -->
+    <section id="intro" class="about-education modern-section">
         <h2>About me</h2>
-        <p class="justify">I’m a recent graduate in Meteorology, Oceanography, and Climate, with a special interest in weather forecasting, atmospheric analysis, and climate modeling. I’m looking for opportunities to apply my technical knowledge across various sectors and I’m open to challenges in environmental science, renewable energy, and scientific consultancy. I’m eager to explore new areas that integrate atmospheric and environmental sciences.</p>
-        <h2>Education</h2>
-        <p><strong>BSc in Meteorology, Oceanography and Climate</strong><br>
-        University of Aveiro, 2024</p>
+        <p class="justify">
+            I’m a recent graduate in Meteorology, Oceanography, and Climate, with a special interest in weather forecasting, atmospheric analysis, and climate modeling. 
+            I’m looking for opportunities to apply my technical knowledge across various sectors and I’m open to challenges in environmental science, renewable energy, and scientific consultancy. 
+            I’m eager to explore new areas that integrate atmospheric and environmental sciences.
+        </p>
+        </div>
+        <div class="section-content">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>
+                        <img src="graduation.png" alt="Icon" class="education-icon">
+                        MSc in Marine and Atmospheric Sciences <span class="year">(2024-Present)</span>
+                    </h3>
+                    <p class="university">University of Aveiro</p>
+                    <h3>
+                        <img src="graduation.png" alt="Icon" class="education-icon">
+                        BSc in Meteorology, Oceanography and Climate <span class="year">(2024)</span>
+                    </h3>
+                    <p class="university">University of Aveiro</p>
+                </div>
+            </div>    
     </section>
 
-    <section id="projects" class="projects hidden">
+    <!-- Seção 'Projetos' -->
+    <section id="projects" class="projects modern-section hidden">
         <h2>Projects</h2>
         <div class="project-list">
             <div class="project-card">
                 <h3>The northerly winds in Aveiro: analysis of its behaviour in contemporary climate and future climate scenarios</h3>
-                <p class="justify">The study involved the analysis of northerly winds in the Aveiro region, using historical data (1995-2014) and climate projections from the CMIP6 project for future scenarios (SSP2-4.5, SSP3-7.0 and SSP5-8.5). The focus of the project was to investigate how wind behaviour might change under different climatic conditions.</p>
+                <p class="justify">
+                    The study involved the analysis of northerly winds in the Aveiro region, using historical data (1995-2014) and climate projections from the CMIP6 project for future scenarios (SSP2-4.5, SSP3-7.0 and SSP5-8.5). 
+                    The focus of the project was to investigate how wind behaviour might change under different climatic conditions.
+                </p>
             </div>
         </div>
     </section>
     
-    <section id="contact" class="contact hidden">
+    <!-- Seção 'Contato' -->
+    <section id="contact" class="contact modern-section hidden">
         <h2>Contact</h2>
         <div class="contact-form-container">
-            <form action="https://formspree.io/f/mwpkeklr" method="POST">
-                <input type="text" name="nome" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="mensagem" placeholder="Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+            <div class="contact-box"> <!-- Adicione esta div para criar a caixa -->
+                <form action="https://formspree.io/f/mwpkeklr" method="POST">
+                    <!-- Label para o campo 'Name' -->
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="nome" placeholder="Name" required>
+
+                    <!-- Label para o campo 'Email' -->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+
+                    <!-- Label para o campo 'Message' -->
+                    <label for="message">Message</label>
+                    <textarea id="message" name="mensagem" placeholder="Message..." required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
         </div>
         <div class="contact-info-container">
             <h3>Contact Info</h3>
@@ -269,18 +114,43 @@
             </p>
         </div>
     </section>
-    
-    
-    
-    
-    
+
     <footer>
-        <p>&copy; Pão e vinho fazem a mulher sã. Beatriz  Carvalho 2024.</p>
+        <rodape>&copy; Pão e vinho fazem a mulher sã. Beatriz Carvalho 2024.</rodape>
     </footer>
 
 
 
     
+    <script>
+        // Quando o documento estiver pronto, execute a função
+        document.addEventListener('DOMContentLoaded', function () {
+          // Selecione a barra de navegação
+          const navbar = document.querySelector('.navbar');
+      
+          // Obtenha a posição vertical da barra de navegação no carregamento
+          const navbarOffset = navbar.offsetTop;
+      
+          // Função que será executada ao rolar a página
+          function handleScroll() {
+            // Se a posição de rolagem atual for maior ou igual ao offset da barra de navegação
+            if (window.pageYOffset >= navbarOffset) {
+              // Adiciona a classe 'fixed' para torná-la fixa no topo
+              navbar.classList.add('fixed');
+            } else {
+              // Remove a classe 'fixed' para deixá-la em sua posição original
+              navbar.classList.remove('fixed');
+            }
+          }
+      
+          // Ativar a função ao rolar a página
+          window.addEventListener('scroll', handleScroll);
+        });
+      </script>
+      
+
+
+
     <script>
         // Seleciona todos os links da barra de navegação
         const navLinks = document.querySelectorAll('.nav-link');
@@ -301,9 +171,10 @@
             });
         });
 
+        // Função para mostrar a seção de contato
         function showSection(event) {
             event.preventDefault(); // Previne o comportamento padrão do link
-            const contactSection = document.getElementById('contact');
+            const contactSection = document.getElementById('contact'); // Obtém a seção de contato
             contactSection.classList.remove('hidden'); // Remove a classe "hidden" para mostrar a seção de contato
             sections.forEach(section => {
                 if (section !== contactSection) {
